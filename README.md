@@ -5,7 +5,7 @@ Hello! I'm Zac, a passionate game developer and software engineer currently expa
 
 ## Portfolio Overview
 This portfolio includes a selection of my projects, both in game development and web applications. Here’s what you can find:
-
+- Visit my portfolio [here](https://zachariahredfield.github.io/ZachariahRedfield/) to see my projects
 ### Projects
 - **Mazer**: A procedurally generated 2D maze game built in C++ using Unreal Engine. Users can change maze size and camera scale. There are additional game features that can be toggled from the main menu options. An AI player navigates the maze using algorithms.
 - **Algorithmic Efficiency App**: A web app currently in development that focuses on algorithm efficiency and concurrency.
