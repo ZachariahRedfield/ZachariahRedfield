@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0 20px; /* Add padding to the left and right */
-    background-color: #f4f4f4;
+    background-color: #c3f4b9;
 }
 
 header {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
     padding: 10px 20px;
 }
@@ -48,7 +48,7 @@ nav ul li {
 footer {
     text-align: center; /* Center align the footer */
     padding: 10px;
-    background-color: #333;
+    background-color: #2c3e50;
     color: #fff;
 }
 
@@ -60,18 +60,6 @@ section {
 /* Custom Color Theme */
 h1, h2, h3 {
     color: #333;
-}
-
-body {
-    background-color: #c3f4b9; /* Set the light green as the page background */
-}
-
-header {
-    background-color: #2c3e50;
-}
-
-footer {
-    background-color: #2c3e50;
 }
 
 /* Add Padding and Centering */
