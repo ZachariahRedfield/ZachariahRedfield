@@ -60,19 +60,11 @@ section {
 /* Custom Color Theme */
 h1 {
     color: #d1e6c6;
-    text-shadow: 
-        -1px -1px 0 #fff,  /* Top-left */
-        1px -1px 0 #fff,   /* Top-right */
-        -1px 1px 0 #fff,   /* Bottom-left */
-        1px 1px 0 #fff;    /* Bottom-right */
+    -webkit-text-stroke: 0.5px #fff; /* Thin white outline */
 }
 h2, h3 {
     color: #333;
-    text-shadow: 
-        -1px -1px 0 #fff,  /* Top-left */
-        1px -1px 0 #fff,   /* Top-right */
-        -1px 1px 0 #fff,   /* Bottom-left */
-        1px 1px 0 #fff;    /* Bottom-right */
+    -webkit-text-stroke: 0.5px #fff; /* Thin white outline */
 }
 
 /* Add Padding and Centering */
