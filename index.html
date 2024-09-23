@@ -3,32 +3,90 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>Zachariah's Portfolio</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                text-align: center;
-                padding: 20px;
-            }
-            h1 {
-                color: #333
-            }
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
     </head>
     <body>
-        <h1>Welcome to Zachariah's Portfolio</h1>
-        <p>Check out my projects below</p>
-        <ul>
-            <li><a href="https://clovercode.itch.io" target="_blank">My Games on Itch.io</a></li>
-            <!--Add the web-app link to the repository here OR link to the website-->
-        </ul>
+        <header>
+            <h1>Welcome to Zachariah Redfield's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Zac, a passionate game developer and software engineer currently expanding my skills in full-stack web development. I have a bachelor's degree in Game Development and I'm looking forward to showcasing my projects.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>CloverCode Games</h3>
+                <p>CloverCode is the handle used for the page where I publish the games I create. I currently have a couple games posted to my page.</p>
+                <p>Use the link below to visit my page at Itch.io and check out my projects! The most recent project I have worked on game-wise is Mazer.</p>
+                <li><a href="https://clovercode.itch.io" target="_blank">(Link to Itch.io)</a></li>
+                <!-- Add link to code in rep here -->
+            </div>
+            <div class="project-card"></div>
+                <h3>Algorithmic Efficiency App</h3>
+                <p> A web app currently in development that focuses on algorithm efficiency and concurrency, while visualizing the algorithms as well. </p>
+                <!-- Add link to web-app here-->
+                <!--Add the web-app link to the repository here OR link to the website-->
+                <!-- Add link to code in rep here -->
+            </div>
+            <!-- Add more project cards here -->
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div>
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>Languages: HTML, CSS, JavaScript</li>
+                    <li>Frameworks: React</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Languages: C#, Java, Python, SQL</li>
+                    <li>Frameworks: Node.js, Spring Boot</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>Game Development</h3>
+                <ul>
+                    <li>Languages: C++, C#</li>
+                    <li>Frameworks: Unreal Engine (Blueprints, UMG), Unity (Cinemachine, ProBuilder, TextMesh Pro)</li>
+                    <li>Tools: Unreal Motion Graphics (UMG), Niagara</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>Git, GitHub, Git Bash, TortoiseGit</li>
+                    <li>Visual Studio, VS Code, Ubuntu</li>
+                    <li>pgAdmin 4, PyCharm, Oracle VM VirtualBox, Install Creator</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:zjhredfield@icloud.com" target="_blank">zjhredfield@icloud.com</a></p>
+            <p>GitHub: <a href="https://github.com/ZachariahRedfield" target="_blank">ZachariahRedfield</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Zachariah Redfield</p>
+        </footer>
     </body>
 </html>
