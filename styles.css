@@ -60,11 +60,11 @@ section {
 /* Custom Color Theme */
 h1 {
     color: #d1e6c6;
-    -webkit-text-stroke: 0.5px #fff; /* Thin white outline */
+    -webkit-text-stroke: 0.1px #fff; /* Thin white outline */
 }
 h2, h3 {
     color: #333;
-    -webkit-text-stroke: 0.5px #fff; /* Thin white outline */
+    -webkit-text-stroke: 0.25px #fff; /* Thin white outline */
 }
 
 /* Add Padding and Centering */
