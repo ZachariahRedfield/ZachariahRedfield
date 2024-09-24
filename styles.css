@@ -103,16 +103,6 @@ body, header, footer, .project-card {
     transition: background-color 0.8s ease, color 0.8s ease;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    margin-bottom: 20px;
-    z-index: 1000; /* Keeps the nav on top of other elements */
-    background-color: #333; /* Make sure it has a background color */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 10px 0; /* Adjust padding to ensure consistent height */
-}
-
 /* Navigation Styles */
 nav ul {
     display: flex;
