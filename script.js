@@ -37,3 +37,37 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Simple validation
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const formMessage = document.getElementById("form-message");
+
+    if (!name || !email || !message) {
+        formMessage.textContent = "All fields are required.";
+        formMessage.style.color = "red";
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        formMessage.textContent = "Please enter a valid email address.";
+        formMessage.style.color = "red";
+        return;
+    }
+
+    formMessage.textContent = "Your message has been sent successfully!";
+    formMessage.style.color = "green";
+
+    // Reset the form after submission
+    document.getElementById("contactForm").reset();
+});
+
+// Function to validate email
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
