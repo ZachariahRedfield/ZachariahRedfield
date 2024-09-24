@@ -29,6 +29,40 @@ li {
     color: #333;
 }
 
+/*Dark Mode Color Scheme*/
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #fff;
+    color: #333;
+}
+
+body.dark-mode h1 {
+    color: #333
+}
+
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: #fff;
+}
+
+body.dark-mode nav a,
+body.dark-mode a.button-link {
+    background-color: #3d7ec0;
+    color: #fff;
+}
+
+body.dark-mode .project-card {
+    background: #333;
+    border: 1px solid #2b2c2e;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
 /* Navigation Styles */
 nav ul {
     list-style-type: none;
@@ -41,6 +75,20 @@ nav ul li {
     margin-right: 15px;
 }
 
+/*Navigation Button Styles*/
+nav a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2165aa;
+    /* Dark blue color when not hovering */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.5s ease;
+    /* Smooth background transition */
+}
+
+/*Dark Mode Toggle*/
 .toggle-container {
     margin-left: auto; /* Push the toggle to the right */
 }
@@ -48,28 +96,19 @@ nav ul li {
 #theme-label {
     font-size: 20px; /* Adjust the size as needed */
     padding: 5px 10px;
-    background-color: #007bff; /* Button background color */
+    background-color: #2165aa; /* Button background color */
     color: white; /* Button text color */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-
 #theme-label:hover {
     background-color: #0056b3; /* Darker background on hover */
 }
 
-nav a {
-    color: #ffffff;
-    background-color: #007bff;
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
+/*Regular links*/
 a {
-    color: #007bff;
+    color: #007bffc2;
     text-decoration: none;
 }
 
@@ -89,7 +128,6 @@ a.button-link {
     transition: background 0.5s ease;
     /* Smooth background transition */
 }
-
 
 /* Rainbow Hover Effect */
 a.button-link:hover {
