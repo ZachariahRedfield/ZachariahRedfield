@@ -126,14 +126,22 @@ nav {
     align-items: center;
 }
 
-.nav-left, .nav-right {
+.nav-left {
     flex: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .nav-links {
     flex: 2;
     display: flex;
     justify-content: center;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
