@@ -66,7 +66,7 @@ body.dark-mode nav a:hover {
 
 body.dark-mode a.button-link {
     background-color: #e4dcdc;
-    color: #414549;
+    color: #007bfff6;
     border: 1px solid #414549;
 }
 
@@ -129,7 +129,7 @@ nav a:hover {
 #theme-label {
     font-size: 20px;
     /* Adjust the size as needed */
-    padding: 5px 10px;
+    padding: 8px 15px;
     background-color: #98a2ad;
     /* Button background color */
     color: #333;
@@ -145,23 +145,13 @@ nav a:hover {
     /* Darker background on hover */
 }
 
-/*Regular links*/
-a {
-    color: #007bffc2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Button-Like Links for External Profiles */
 a.button-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #414549;
     /* Dark blue color when not hovering */
-    color: #fff;
+    color: #007bfff6;
     border: 1px solid #e1e4e8;
     border-radius: 5px;
     text-decoration: none;
@@ -190,6 +180,16 @@ a.button-link:hover {
         background-position: 100% 33%;
         /* End position */
     }
+}
+
+/*Regular links*/
+a {
+    color: #007bfff6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Project Card Styles */
