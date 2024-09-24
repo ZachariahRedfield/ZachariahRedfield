@@ -54,6 +54,10 @@ body.dark-mode li {
     color: #fff;
 }
 
+body.dark-mode a {
+    color: #5ea5f1
+}
+
 body.dark-mode nav a {
     background-color: #e4dcdc;
     color: #414549;
@@ -68,6 +72,10 @@ body.dark-mode a.button-link {
     background-color: #e4dcdc;
     color: #007bfff6;
     border: 1px solid #414549;
+}
+
+body.dark-mode a.button-link:hover {
+    color: #333
 }
 
 body.dark-mode .project-card {
@@ -151,7 +159,7 @@ a.button-link {
     padding: 10px 20px;
     background-color: #414549;
     /* Dark blue color when not hovering */
-    color: #007bfff6;
+    color: #5ea5f1;
     border: 1px solid #e1e4e8;
     border-radius: 5px;
     text-decoration: none;
