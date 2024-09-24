@@ -196,7 +196,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(.button-link):hover {
     text-decoration: underline;
 }
 
