@@ -46,7 +46,8 @@ body.dark-mode h1 {
 }
 
 body.dark-mode h2,
-body.dark-mode h3 {
+body.dark-mode h3,
+body.dark-mode p {
     color: #fff;
 }
 
@@ -60,7 +61,7 @@ body.dark-mode .project-card {
     background: #333;
     border: 1px solid #2b2c2e;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, .5);
 }
 
 body.dark-mode #theme-label {
