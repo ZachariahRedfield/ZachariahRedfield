@@ -63,28 +63,36 @@ a:not(.button-link):hover {
 a.button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2165aa; /* Dark blue color when not hovering */
+    background-color: #2165aa;
+    /* Dark blue color when not hovering */
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.5s ease; /* Smooth background transition */
+    transition: background 0.5s ease;
+    /* Smooth background transition */
 }
 
 
 /* Rainbow Hover Effect */
 a.button-link:hover {
+    color: #333;
     background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f, #ff7f00, #ffff00, #7fff00, #00ff00);
-    background-size: 300%; /* Make the gradient larger to allow smooth animation */
-    animation: rainbow 3s linear infinite; /* Run the rainbow animation */
+    background-size: 300%;
+    /* Make the gradient larger to allow smooth animation */
+    animation: rainbow 3s linear infinite;
+    /* Run the rainbow animation */
 }
 
 /* Keyframes for Rainbow Animation */
 @keyframes rainbow {
     0% {
-        background-position: 0% 50%; /* Start position */
+        background-position: 0% 50%;
+        /* Start position */
     }
+
     100% {
-        background-position: 100% 50%; /* End position */
+        background-position: 100% 50%;
+        /* End position */
     }
 }
 
