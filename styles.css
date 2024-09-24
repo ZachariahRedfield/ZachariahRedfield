@@ -99,7 +99,7 @@ body.dark-mode #theme-label:hover {
     /* Darker background on hover */
 }
 
-body, header, footer, .project-card, nav {
+body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link {
     transition: background-color 0.8s ease, color 0.8s ease;
 }
 
@@ -122,6 +122,12 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+}
+
+.nav-links { 
+    display: flex;
+    justify-content: center; /* Center nav buttons */
+    flex-grow: 1; /* Allow this section to grow and fill the space */
 }
 
 nav ul li {
