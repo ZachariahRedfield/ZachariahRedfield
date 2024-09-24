@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     
     /* Use the image as a background */
-    background-image: url('Images\White-Texture.jpg'); /* Replace with your image path */
+    background-image: url('Images/White-Texture.jpg'); /* Replace with your image path */
     /*background-repeat: repeat; /* Repeat the pattern */
     background-size: cover; 
     background-color: #f4f4f9;
@@ -36,7 +36,7 @@ li {
 
 /*Dark Mode Color Scheme*/
 body.dark-mode {
-    background-image: url('Images\Black-Texture.jpg'); /* Replace with your image path */
+    background-image: url('Images/Black-Texture.jpg'); /* Replace with your image path */
     background-color: #333;
     color: #f4f4f9;
 }
