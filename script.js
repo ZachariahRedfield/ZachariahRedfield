@@ -29,7 +29,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 160; // Adjust 80 to your desired offset
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 140; // Adjust 80 to your desired offset
 
         window.scrollTo({
             top: offsetPosition,
