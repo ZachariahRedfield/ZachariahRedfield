@@ -59,6 +59,11 @@ body.dark-mode nav a {
     color: #414549;
     border: 1px solid #414549;
 }
+
+body.dark-mode nav a:hover {
+    background-color: #a59797;
+}
+
 body.dark-mode a.button-link {
     background-color: #e4dcdc;
     color: #414549;
@@ -111,6 +116,10 @@ nav a {
     /* Smooth background transition */
 }
 
+nav a:hover {
+    background-color: #666a6d;
+}
+
 /*Dark Mode Toggle*/
 .toggle-container {
     margin-left: auto;
@@ -142,7 +151,7 @@ a {
     text-decoration: none;
 }
 
-a:not(.button-link):hover {
+a:hover {
     text-decoration: underline;
 }
 
