@@ -55,7 +55,7 @@ This portfolio includes a selection of my projects, both in game development and
 - pgAdmin 4, PyCharm, Oracle VM VirtualBox, Install Creator
 
 ## How to Navigate
-- Explore the projects listed above. Click on the links to view the code and live demos, or download an install file to play a game.
+- Explore the projects listed above. Click on the links to view the code, or download an install file to play a game.
 - Feel free to reach out if you have any questions or would like to collaborate!
 
 ## Contact
