@@ -38,7 +38,25 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
+}
+
+.toggle-container {
+    margin-left: auto; /* Push the toggle to the right */
+}
+
+#theme-label {
+    font-size: 20px; /* Adjust the size as needed */
+    padding: 5px 10px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+#theme-label:hover {
+    background-color: #0056b3; /* Darker background on hover */
 }
 
 nav a {
