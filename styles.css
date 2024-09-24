@@ -98,8 +98,8 @@ body.dark-mode .project-card {
 }
 
 body.dark-mode .form-container {
-    color: #fff;
-}
+    background-color: #fff; /* Apply background to just the form container */
+    color: #333
 
 body.dark-mode button {
     background-color: #333;
@@ -303,6 +303,7 @@ a:not(.button-link):hover {
 
 .form-container {
     background-color: #333; /* Apply background to just the form container */
+    color: #fff
     padding: 40px; /* Add padding around the form */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
     border-radius: 10px; /* Rounded corners for the form */
