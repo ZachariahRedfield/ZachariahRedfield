@@ -100,6 +100,7 @@ body.dark-mode .project-card {
 body.dark-mode .form-container {
     background-color: #fff; /* Apply background to just the form container */
     color: #333
+}
 
 body.dark-mode button {
     background-color: #333;
