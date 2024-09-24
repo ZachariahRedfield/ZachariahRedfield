@@ -73,7 +73,7 @@ a.button-link {
 
 /* Rainbow Hover Effect */
 a.button-link:hover {
-    /*background-size: 300%; /* Make the gradient larger to allow smooth animation */
+    background-size: 300%; /* Make the gradient larger to allow smooth animation */
     animation: rainbow 3s linear infinite; /* Run the rainbow animation */
 }
 
