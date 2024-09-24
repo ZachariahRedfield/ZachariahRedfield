@@ -9,9 +9,7 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between; /* Space between logo/title and nav */
-    align-items: center;
+    
     background: #333;
     color: #ffffff;
     padding: 10px 20px;
@@ -99,7 +97,6 @@ body.dark-mode #theme-label:hover {
 
 /* Navigation Styles */
 nav ul {
-    display: flex;
     list-style-type: none;
     padding: 0;
     text-align: center;
