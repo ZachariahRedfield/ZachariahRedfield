@@ -57,6 +57,15 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Button-Like Links for External Profiles */
 a.button-link {
     display: inline-block;
