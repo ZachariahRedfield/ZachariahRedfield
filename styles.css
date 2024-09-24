@@ -97,6 +97,19 @@ body.dark-mode .project-card {
     box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
 }
 
+body.dark-mode .form-container {
+    color: #fff;
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #a59797;
+}
+
 body.dark-mode #theme-label {
     background-color: #414549;
     /* Button background color */
@@ -289,11 +302,11 @@ a:not(.button-link):hover {
 }
 
 .form-container {
-    background-color: #fff; /* Apply background to just the form container */
+    background-color: #333; /* Apply background to just the form container */
     padding: 40px; /* Add padding around the form */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
     border-radius: 10px; /* Rounded corners for the form */
-    max-width: 600px; /* Limit the width of the form */
+    max-width: 800px; /* Limit the width of the form */
     width: 100%; /* Make the form responsive */
 }
 
@@ -346,8 +359,8 @@ textarea {
 button {
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -356,7 +369,7 @@ button {
 }
 
 button:hover {
-    background-color: #666;
+    background-color: #414549;
 }
 
 /* Error/success message */
