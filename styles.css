@@ -285,16 +285,35 @@ a:not(.button-link):hover {
 }
 
 form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
     border-radius: 10px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Make the name and email fields side by side */
+.half-width {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%; /* Add spacing between the two inputs */
+}
+
+.half-width:last-child {
+    margin-right: 0; /* Remove the margin on the right of the second input */
+}
+
+/* Full width for the message */
+.full-width {
+    width: 100%;
 }
 
 label {
@@ -303,27 +322,29 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 15px; /* Increase padding for bigger input fields */
+    font-size: 1.1em; /* Increase font size */
     border-radius: 5px;
-    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
 }
 
 textarea {
-    height: 150px;
+    height: 150px; /* Increase height */
+    resize: vertical; /* Allow resizing vertically only */
 }
 
 button[type="submit"] {
-    display: inline-block;
-    background-color: #414549;
-    color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Increase padding for larger button */
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
