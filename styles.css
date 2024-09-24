@@ -282,6 +282,7 @@ a:not(.button-link):hover {
 #contactSubmissionForm h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
 form {
