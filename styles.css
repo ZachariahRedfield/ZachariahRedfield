@@ -118,7 +118,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     list-style-type: none;
     padding: 0;
     text-align: center;
@@ -258,6 +258,7 @@ section {
 
 /* Add Padding and Centering */
 .container {
+    overflow: visible;
     max-width: 1200px;
     margin: 0 auto;
     /* Centers content */
