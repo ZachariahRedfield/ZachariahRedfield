@@ -106,7 +106,7 @@ body.dark-mode #theme-label:hover {
 }
 
 body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link {
-    transition: background-color 0.8s ease, color 0.8s ease;
+    transition: background-color 1.2s ease, color 1.2s ease;
 }
 
 /* Navigation Styles */
