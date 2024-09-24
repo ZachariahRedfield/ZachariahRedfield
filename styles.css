@@ -103,6 +103,7 @@ body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link {
     transition: background-color 0.8s ease, color 0.8s ease;
 }
 
+/* Navigation Styles */
 nav {
     position: sticky;
     top: 0;
@@ -112,12 +113,8 @@ nav {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 10px 0; /* Adjust padding to ensure consistent height */
 
-    display: flex;
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
 }
 
-/* Navigation Styles */
 nav ul {
     display: flex;
     justify-content: center;
@@ -126,12 +123,6 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     text-align: center;
-}
-
-.nav-links { 
-    display: flex;
-    justify-content: center; /* Center nav buttons */
-    flex-grow: 1; /* Allow this section to grow and fill the space */
 }
 
 nav ul li {

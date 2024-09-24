@@ -1,0 +1,24 @@
+# Node modules (for Node.js projects)
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Compiled code
+*.class
+*.exe
+*.o
+
+# Temporary files
+*.tmp
