@@ -3,7 +3,8 @@ body {
     background-color: #f4f4f9;
     color: #333;
     margin: 0;
-    padding: 20px; /* Add padding to the left and right */
+    padding: 20px;
+    /* Add padding to the left and right */
     line-height: 1.6
 }
 
@@ -18,7 +19,9 @@ header {
 h1 {
     color: #fff;
 }
-h2, h3 {
+
+h2,
+h3 {
     color: #333;
 }
 
@@ -38,16 +41,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-/*
-nav ul li::after {
-    content: "|"; /* Adds the pipe 
-    margin-left: 15px; /* Adds space after the pipe 
-}
-
-nav ul li:last-child::after {
-    content: ""; /* Removes the pipe from the last item 
-}*/
-
 nav a {
     color: #ffffff;
     background-color: #007bff;
@@ -62,7 +55,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(.button-link):hover {
     text-decoration: underline;
 }
 
@@ -70,15 +63,27 @@ a:hover {
 a.button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f);
+    /*background-color: #007bff;*/
+    background-size: 300%;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 a.button-link:hover {
-    background-color: #0056b3;
+    animation: rainbow 1.5s linear infinite; /* Run the rainbow animation */
+}
+
+/* Keyframes for Rainbow Animation */
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    100% {
+        background-position: 100% 50%; /* End position */
+    }
 }
 
 /* Project Card Styles */
@@ -86,7 +91,8 @@ a.button-link:hover {
     background: #ffffff;
     border: 1px solid #e1e4e8;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* A deeper shadow for a sharper look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* A deeper shadow for a sharper look */
     margin: 30px 0;
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -97,8 +103,10 @@ a.button-link:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-8px); /* Add more elevation on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sharper hover shadow */
+    transform: translateY(-8px);
+    /* Add more elevation on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    /* Sharper hover shadow */
 }
 
 /* Footer Styles */
@@ -118,6 +126,7 @@ section {
 /* Add Padding and Centering */
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Centers content */
+    margin: 0 auto;
+    /* Centers content */
     padding: 20px;
 }
