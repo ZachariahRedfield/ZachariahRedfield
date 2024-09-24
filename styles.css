@@ -45,7 +45,7 @@ body.dark-mode h1 {
     color: #333
 }
 
-body.dark-mode h2, 
+body.dark-mode h2,
 body.dark-mode h3 {
     color: #fff;
 }
@@ -61,6 +61,18 @@ body.dark-mode .project-card {
     border: 1px solid #2b2c2e;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode #theme-label {
+    background-color: #414549;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+}
+
+body.dark-mode #theme-label:hover {
+    background-color: #c8d2dd;
+    /* Darker background on hover */
 }
 
 /* Navigation Styles */
@@ -90,20 +102,27 @@ nav a {
 
 /*Dark Mode Toggle*/
 .toggle-container {
-    margin-left: auto; /* Push the toggle to the right */
+    margin-left: auto;
+    /* Push the toggle to the right */
 }
 
 #theme-label {
-    font-size: 20px; /* Adjust the size as needed */
+    font-size: 20px;
+    /* Adjust the size as needed */
     padding: 5px 10px;
-    background-color: #2165aa; /* Button background color */
-    color: white; /* Button text color */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: #c8d2dd;
+    /* Button background color */
+    color: #333;
+    /* Button text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.8s ease;
+    /* Smooth transition */
 }
 
 #theme-label:hover {
-    background-color: #0056b3; /* Darker background on hover */
+    background-color: #414549;
+    /* Darker background on hover */
 }
 
 /*Regular links*/
