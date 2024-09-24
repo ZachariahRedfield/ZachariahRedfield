@@ -1,11 +1,16 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
     color: #333;
     margin: 0;
     padding: 20px;
     /* Add padding to the left and right */
-    line-height: 1.6
+    line-height: 1.6;
+    
+    /* Use the image as a background */
+    background-image: url('Images\White-Texture.jpg'); /* Replace with your image path */
+    /*background-repeat: repeat; /* Repeat the pattern */
+    background-size: cover; 
+    background-color: #f4f4f9;
 }
 
 header {
