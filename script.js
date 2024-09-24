@@ -3,9 +3,22 @@
 const toggleCheckbox = document.getElementById('theme-toggle');
 const themeLabel = document.getElementById('theme-label');
 
-toggleCheckbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode', toggleCheckbox.checked);
+function applyTheme(isDarkMode) {
+    document.body.classList.toggle('dark-mode', isDarkMode);
 
-    // Change the label to indicate the current theme
-    themeLabel.textContent = toggleCheckbox.checked ? '🌞' : '🌙'; // Change to sun emoji when in dark mode
+    toggleCheckbox.checked = isDarkMode// Sync the checkbox state
+    themeLabel.textContent = toggleCheckbox.checked ? '🌞' : '🌙'; // Update icon
+}
+
+// On page load, check localStorage and apply the theme
+window.addEventListener('DOMContentLoaded', () => {
+    const isDarkMode = localStorage.getItem('dark-mode') === 'true'; // Get the preference
+    applyTheme(isDarkMode); // Apply the theme based on preference
+});
+
+// Event listener for the theme toggle
+toggleCheckbox.addEventListener('change', () => {
+    const isDarkMode = toggleCheckbox.checked;
+    applyTheme(isDarkMode); // Apply the selected theme
+    localStorage.setItem('dark-mode', isDarkMode); // Save preference to localStorage
 });
