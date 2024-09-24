@@ -1,6 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
     margin: 0;
     padding: 20px;
     /* Add padding to the left and right */
@@ -11,6 +10,7 @@ body {
     /*background-repeat: repeat; /* Repeat the pattern */
     background-size: cover; 
     background-color: #f4f4f9;
+    color: #333;
 }
 
 header {
@@ -36,6 +36,7 @@ li {
 
 /*Dark Mode Color Scheme*/
 body.dark-mode {
+    background-image: url('Images\Black-Texture.jpg'); /* Replace with your image path */
     background-color: #333;
     color: #f4f4f9;
 }
@@ -117,22 +118,32 @@ nav {
     background-color: #333; /* Make sure it has a background color */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 10px 0; /* Adjust padding to ensure consistent height */
-
 }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    flex: 1;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     list-style-type: none;
-    padding: 10px;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-
 nav ul li {
-    display: inline;
     margin-right: 15px;
 }
 
@@ -141,7 +152,6 @@ nav a {
     display: inline-block;
     padding: 8px 15px;
     background-color: #414549;
-    /* Dark blue color when not hovering */
     color: #fff;
     border: 1px solid #dfe3e9;
     border-radius: 5px;
