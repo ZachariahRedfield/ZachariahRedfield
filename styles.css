@@ -73,6 +73,7 @@ a.button-link {
 
 /* Rainbow Hover Effect */
 a.button-link:hover {
+    background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f, #ff7f00, #ffff00, #7fff00, #00ff00);
     background-size: 300%; /* Make the gradient larger to allow smooth animation */
     animation: rainbow 3s linear infinite; /* Run the rainbow animation */
 }
@@ -80,55 +81,10 @@ a.button-link:hover {
 /* Keyframes for Rainbow Animation */
 @keyframes rainbow {
     0% {
-        background-color: #ff0000; /* Start color */
-    }
-    6.25% {
-        background-color: #ff7f00; /* Orange */
-    }
-    12.5% {
-        background-color: #ffff00; /* Yellow */
-    }
-    18.75% {
-        background-color: #7fff00; /* Light Green */
-    }
-    25% {
-        background-color: #00ff00; /* Green */
-    }
-    31.25% {
-        background-color: #00ff7f; /* Teal */
-    }
-    47.5% {
-        background-color: #00ffff; /* Cyan */
-    }
-    43.75% {
-        background-color: #007fff; /* Light Blue */
-    }
-    50% {
-        background-color: #0000ff; /* Blue */
-    }
-    56.25% {
-        background-color: #7f00ff; /* Violet */
-    }
-    62.5% {
-        background-color: #ff00ff; /* Magenta */
-    }
-    68.75% {
-        background-color: #ff007f; /* Pink */
-    }
-    75% {
-        background-color: #ff0000; /* Back to start color */
-    }
-    81.25% {
-        background-color: #ff7f00; /* Orange */
-    }
-    87.5% {
-        background-color: #ffff00; /* Yellow */
-    }
-    93.75% {
-        background-color: #7fff00; /* Light Green */
+        background-position: 0% 50%; /* Start position */
     }
     100% {
-        background-color: #00ff00; /* Green */
+        background-position: 100% 50%; /* End position */
     }
 }
 
