@@ -275,23 +275,31 @@ a:not(.button-link):hover {
 /* Contact Section */
 #contactSubmissionForm {
     padding: 50px 20px;
-    color: #333;
 }
 
 #contactSubmissionForm h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
 }
 
+.contact-section {
+    display: flex;
+    justify-content: center; /* Center the form on the page */
+    padding: 40px 0; /* Add vertical padding */
+}
+
+.form-container {
+    background-color: #fff; /* Apply background to just the form container */
+    padding: 40px; /* Add padding around the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
+    border-radius: 10px; /* Rounded corners for the form */
+    max-width: 600px; /* Limit the width of the form */
+    width: 100%; /* Make the form responsive */
+}
+
+/* Set up the form styling */
 form {
-    max-width: 100%;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 10px;
+    width: 100%; /* Form should take up the full width of the container */
 }
 
 .form-group {
@@ -316,29 +324,27 @@ form {
     width: 100%;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
+/* Increase the size of the input fields and add padding */
 input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 15px; /* Increase padding for bigger input fields */
-    font-size: 1.1em; /* Increase font size */
+    padding: 12px 15px; /* Add padding to make inputs bigger and more balanced */
+    font-size: 1.1em;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 5px;
+    max-width: 100%; /* Prevent text boxes from overflowing beyond the form */
 }
 
+/* Prevent message box from being resized sideways */
 textarea {
     height: 150px; /* Increase height */
-    resize: vertical; /* Allow resizing vertically only */
+    resize: vertical; /* Only allow vertical resizing */
 }
 
-button[type="submit"] {
-    padding: 15px 30px; /* Increase padding for larger button */
+/* Make the button bigger */
+button {
+    padding: 15px 30px;
     font-size: 1.2em;
     background-color: #333;
     color: white;
@@ -346,10 +352,11 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; /* Make the button take the full width */
 }
 
-button[type="submit"]:hover {
-    background-color: #666a6d;
+button:hover {
+    background-color: #666;
 }
 
 /* Error/success message */
