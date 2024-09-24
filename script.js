@@ -22,3 +22,18 @@ toggleCheckbox.addEventListener('change', () => {
     applyTheme(isDarkMode); // Apply the selected theme
     localStorage.setItem('dark-mode', isDarkMode); // Save preference to localStorage
 });
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 80; // Adjust 80 to your desired offset
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth' // Smooth scrolling
+        });
+    });
+});
