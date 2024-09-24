@@ -134,7 +134,7 @@ nav {
     flex: 2;
     display: flex;
     justify-content: center;
-
+}
 
 nav ul {
     display: flex;
@@ -156,7 +156,7 @@ nav a {
     border: 1px solid #dfe3e9;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.5s ease;
+    transition: background-color 0.5s ease;
     /* Smooth background transition */
 }
 
@@ -199,7 +199,7 @@ a.button-link {
     border: 1px solid #e1e4e8;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.5s ease;
+    transition: background-color 0.5s ease;
     /* Smooth background transition */
 }
 
