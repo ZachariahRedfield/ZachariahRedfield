@@ -99,7 +99,7 @@ body.dark-mode #theme-label:hover {
     /* Darker background on hover */
 }
 
-body, header, footer, .project-card {
+body, header, footer, .project-card, nav {
     transition: background-color 0.8s ease, color 0.8s ease;
 }
 
