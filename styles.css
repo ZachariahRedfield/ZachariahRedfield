@@ -9,6 +9,9 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between; /* Space between logo/title and nav */
+    align-items: center;
     background: #333;
     color: #ffffff;
     padding: 10px 20px;
@@ -51,10 +54,15 @@ body.dark-mode li {
     color: #fff;
 }
 
-body.dark-mode nav a,
+body.dark-mode nav a {
+    background-color: #e4dcdc;
+    color: #414549;
+    border: 1px solid #414549;
+}
 body.dark-mode a.button-link {
-    background-color: #3d7ec0;
-    color: #fff;
+    background-color: #e4dcdc;
+    color: #414549;
+    border: 1px solid #414549;
 }
 
 body.dark-mode .project-card {
@@ -78,6 +86,7 @@ body.dark-mode #theme-label:hover {
 
 /* Navigation Styles */
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     text-align: center;
@@ -92,9 +101,10 @@ nav ul li {
 nav a {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #2165aa;
+    background-color: #414549;
     /* Dark blue color when not hovering */
     color: #fff;
+    border: 1px solid #dfe3e9;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.5s ease;
@@ -140,9 +150,10 @@ a:not(.button-link):hover {
 a.button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2165aa;
+    background-color: #414549;
     /* Dark blue color when not hovering */
     color: #fff;
+    border: 1px solid #e1e4e8;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.5s ease;
