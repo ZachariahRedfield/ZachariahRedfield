@@ -61,7 +61,7 @@ body.dark-mode .project-card {
     background: #333;
     border: 1px solid #2b2c2e;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(255, 255, 255, .5);
+    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
 }
 
 body.dark-mode #theme-label {
@@ -72,7 +72,7 @@ body.dark-mode #theme-label {
 }
 
 body.dark-mode #theme-label:hover {
-    background-color: #c8d2dd;
+    background-color: #98a2ad;
     /* Darker background on hover */
 }
 
@@ -111,7 +111,7 @@ nav a {
     font-size: 20px;
     /* Adjust the size as needed */
     padding: 5px 10px;
-    background-color: #c8d2dd;
+    background-color: #98a2ad;
     /* Button background color */
     color: #333;
     /* Button text color */
