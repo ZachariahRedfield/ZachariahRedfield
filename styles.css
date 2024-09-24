@@ -38,14 +38,15 @@ nav ul li {
     margin-right: 20px;
 }
 
+/*
 nav ul li::after {
-    content: "|"; /* Adds the pipe */
-    margin-left: 15px; /* Adds space after the pipe */
+    content: "|"; /* Adds the pipe 
+    margin-left: 15px; /* Adds space after the pipe 
 }
 
 nav ul li:last-child::after {
-    content: ""; /* Removes the pipe from the last item */
-}
+    content: ""; /* Removes the pipe from the last item 
+}*/
 
 nav a {
     color: #ffffff;
