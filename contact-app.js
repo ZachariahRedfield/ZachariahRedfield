@@ -45,6 +45,12 @@ app.post('/submit-form', async (req, res) => {
     }
 });
 
+// Add this route to check the IP address
+app.get('/ip', (req, res) => {
+    console.log('Incoming request IP:', req.ip);
+    res.send(`Your IP is ${req.ip}`);
+});
+
 //Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
