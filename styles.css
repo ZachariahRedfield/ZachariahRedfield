@@ -40,7 +40,20 @@ li {
 @media screen and (max-width: 768px) {
     .container {
         padding: 10px;
+        width: 100%;
+        margin: 5px 0;
         /* Adjust padding on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        /* Add space between each menu item */
     }
 
     .navbar button {
@@ -52,6 +65,12 @@ li {
     p {
         font-size: 16px;
         /* Adjust font size for smaller screens */
+    }
+
+    /* Ensure project cards take up full width on small screens */
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -347,7 +366,6 @@ section {
 /* Add Padding and Centering */
 .container {
     overflow: visible;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     /* Centers content */
