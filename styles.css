@@ -56,21 +56,29 @@ li {
         /* Add space between each menu item */
     }
 
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px; /* Reduce padding */
+    }
+    
     .navbar button {
-        width: 100%;
-        /* Ensure buttons take full width on small screens */
+        flex: 1 1 auto;
+        margin: 5px; /* Reduce margin for better fit */
+        padding: 10px 15px; /* Adjust padding for smaller buttons */
     }
 
-    h1,
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
     p {
-        font-size: 16px;
-        /* Adjust font size for smaller screens */
+        font-size: 1rem; /* Adjust paragraph text */
     }
 
-    /* Ensure project cards take up full width on small screens */
-    .project-card {
-        width: 100%;
-        margin: 10px 0;
+    button {
+        font-size: 0.9rem; /* Adjust button text size */
     }
 }
 
