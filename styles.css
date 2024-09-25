@@ -124,7 +124,7 @@ body.dark-mode #theme-label:hover {
 }
 
 body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link,
-h1, h2, h3, h4, button, p,  {
+h1, h2, h3, h4, button, p  {
     transition: background-color 1.2s ease, color 1.2s ease;
 }
 
@@ -304,7 +304,7 @@ a:not(.button-link):hover {
 
 .form-container {
     background-color: #333; /* Apply background to just the form container */
-    color: #fff
+    color: #fff;
     padding: 40px; /* Add padding around the form */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
     border-radius: 10px; /* Rounded corners for the form */
