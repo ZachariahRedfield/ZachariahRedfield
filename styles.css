@@ -4,13 +4,13 @@ body {
     padding: 20px;
     /* Add padding to the left and right */
     line-height: 1.6;
-    
+
     /* Use the image as a background */
-    background: 
-    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-    url('Images/White-Texture.jpg'); /* Replace with your image path */
-    /*background-repeat: repeat; /* Repeat the pattern */
-    background-size: cover; 
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('Images/White-Texture.jpg');
+    /* Replace with your image path */
+    background-size: cover;
     background-color: #f4f4f9;
     color: #333;
 }
@@ -38,9 +38,10 @@ li {
 
 /*Dark Mode Color Scheme*/
 body.dark-mode {
-    background: 
-    linear-gradient(rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.8)),
-    url('Images/Black-Texture.jpg'); /* Replace with your image path */
+    background:
+        linear-gradient(rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.8)),
+        url('Images/Black-Texture.jpg');
+    /* Replace with your image path */
     background-color: #333;
     color: #f4f4f9;
 }
@@ -66,7 +67,8 @@ body.dark-mode a {
 }
 
 body.dark-mode nav {
-    background-color: #fff; /* Make sure it has a background color */
+    background-color: #fff;
+    /* Make sure it has a background color */
     box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
 }
 
@@ -98,7 +100,8 @@ body.dark-mode .project-card {
 }
 
 body.dark-mode .form-container {
-    background-color: #fff; /* Apply background to just the form container */
+    background-color: #fff;
+    /* Apply background to just the form container */
     color: #333
 }
 
@@ -123,8 +126,20 @@ body.dark-mode #theme-label:hover {
     /* Darker background on hover */
 }
 
-body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link,
-h1, h2, h3, h4, button, p  {
+body,
+header,
+footer,
+.project-card,
+nav,
+nav a,
+#theme-label,
+a.button-link,
+h1,
+h2,
+h3,
+h4,
+button,
+p {
     transition: background-color 1.2s ease, color 1.2s ease;
 }
 
@@ -133,10 +148,13 @@ nav {
     position: sticky;
     top: 0;
     margin-bottom: 20px;
-    z-index: 1000; /* Keeps the nav on top of other elements */
-    background-color: #333; /* Make sure it has a background color */
+    z-index: 1000;
+    /* Keeps the nav on top of other elements */
+    background-color: #333;
+    /* Make sure it has a background color */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 10px 0; /* Adjust padding to ensure consistent height */
+    padding: 10px 0;
+    /* Adjust padding to ensure consistent height */
 }
 
 .nav-container {
@@ -298,23 +316,32 @@ a:not(.button-link):hover {
 
 .contact-section {
     display: flex;
-    justify-content: center; /* Center the form on the page */
-    padding: 40px 0; /* Add vertical padding */
+    justify-content: center;
+    /* Center the form on the page */
+    padding: 40px 0;
+    /* Add vertical padding */
 }
 
 .form-container {
-    background-color: #333; /* Apply background to just the form container */
+    background-color: #333;
+    /* Apply background to just the form container */
     color: #fff;
-    padding: 40px; /* Add padding around the form */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle 3D effect */
-    border-radius: 10px; /* Rounded corners for the form */
-    max-width: 800px; /* Limit the width of the form */
-    width: 100%; /* Make the form responsive */
+    padding: 40px;
+    /* Add padding around the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Add shadow for a subtle 3D effect */
+    border-radius: 10px;
+    /* Rounded corners for the form */
+    max-width: 800px;
+    /* Limit the width of the form */
+    width: 100%;
+    /* Make the form responsive */
 }
 
 /* Set up the form styling */
 form {
-    width: 100%; /* Form should take up the full width of the container */
+    width: 100%;
+    /* Form should take up the full width of the container */
 }
 
 .form-group {
@@ -327,11 +354,13 @@ form {
 .half-width {
     width: 48%;
     display: inline-block;
-    margin-right: 2%; /* Add spacing between the two inputs */
+    margin-right: 2%;
+    /* Add spacing between the two inputs */
 }
 
 .half-width:last-child {
-    margin-right: 0; /* Remove the margin on the right of the second input */
+    margin-right: 0;
+    /* Remove the margin on the right of the second input */
 }
 
 /* Full width for the message */
@@ -340,21 +369,27 @@ form {
 }
 
 /* Increase the size of the input fields and add padding */
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
-    padding: 12px 15px; /* Add padding to make inputs bigger and more balanced */
+    padding: 12px 15px;
+    /* Add padding to make inputs bigger and more balanced */
     font-size: 1.1em;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 5px;
-    max-width: 100%; /* Prevent text boxes from overflowing beyond the form */
+    max-width: 100%;
+    /* Prevent text boxes from overflowing beyond the form */
 }
 
 /* Prevent message box from being resized sideways */
 textarea {
-    height: 150px; /* Increase height */
-    resize: vertical; /* Only allow vertical resizing */
+    height: 150px;
+    /* Increase height */
+    resize: vertical;
+    /* Only allow vertical resizing */
 }
 
 /* Make the button bigger */
@@ -367,7 +402,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%; /* Make the button take the full width */
+    width: 100%;
+    /* Make the button take the full width */
 }
 
 button:hover {

@@ -1,23 +1,28 @@
-//contact-app.js
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
 
 const app = express();
 
-//Middleware
+// CORS configuration
+app.use(cors({
+    origin: 'https://zachariahredfield.github.io' // Adjust to your front-end URL
+}));
+
+// Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(helmet()); //Security 
+app.use(helmet()); // Security middleware
 
-//MongoDB connection 
+// MongoDB connection 
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB connected!'))
     .catch(err => console.log(err));
 
-//Define a schema and model for the contact form
+// Define a schema and model for the contact form
 const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -26,7 +31,7 @@ const contactSchema = new mongoose.Schema({
 
 const Contact = mongoose.model('Contact', contactSchema);
 
-//Handle POST request from the contact form
+// Handle POST request from the contact form
 app.post('/submit-form', async (req, res) => {
     const { name, email, message } = req.body;
 
@@ -41,7 +46,8 @@ app.post('/submit-form', async (req, res) => {
 
         res.json({ success: true, message: 'Form submitted successfully' });
     } catch (error) {
-        res.status(500).json({ sucess: false, message: 'Something went wrong.' });
+        console.error('Error saving contact:', error); // Log the error
+        res.status(500).json({ success: false, message: 'Something went wrong.' });
     }
 });
 
@@ -51,7 +57,6 @@ app.get('/ip', (req, res) => {
     res.send(`Your IP is ${req.ip}`);
 });
 
-//Start the server
+// Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-

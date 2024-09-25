@@ -6,7 +6,6 @@ const themeLabel = document.getElementById('theme-label');
 
 function applyTheme(isDarkMode) {
     document.body.classList.toggle('dark-mode', isDarkMode);
-
     toggleCheckbox.checked = isDarkMode// Sync the checkbox state
     themeLabel.textContent = toggleCheckbox.checked ? '🌞' : '🌙'; // Update icon
 }
@@ -40,7 +39,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// Contact form submission approve or deny W/ validation of information
+// Contact form submission with validation of information
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener("submit", async function (e) {
     e.preventDefault(); // Prevent the form from submitting normally
@@ -73,7 +72,7 @@ contactForm.addEventListener("submit", async function (e) {
     };
 
     try {
-        const response = await fetch('https://contact-app-ynnx.onrender.com/submit-form', {
+        const response = await fetch('https://contact-app-ynnx.onrender.com/submit-form', { // Remove proxy for production
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,16 +80,20 @@ contactForm.addEventListener("submit", async function (e) {
             body: JSON.stringify(data),
         });
 
-        const result = await response.json();
-
-        if (result.success) {
-            formMessage.textContent = "Your message has been sent successfully!";
-            formMessage.style.color = "green";
-            alert('Form submitted successfully!');
+        if (response.ok) {
+            const result = await response.json();
+            if (result.success) {
+                formMessage.textContent = "Your message has been sent successfully!";
+                formMessage.style.color = "green";
+                alert('Form submitted successfully!');
+            } else {
+                formMessage.textContent = "There was an error submitting the form.";
+                formMessage.style.color = "red";
+                alert('There was an error submitting the form.');
+            }
         } else {
-            formMessage.textContent = "There was an error submitting the form.";
+            formMessage.textContent = "Server responded with an error: " + response.statusText;
             formMessage.style.color = "red";
-            alert('There was an error submitting the form.');
         }
     } catch (error) {
         formMessage.textContent = "There was a problem connecting to the server.";
