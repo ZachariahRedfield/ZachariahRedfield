@@ -1,0 +1,12 @@
+{
+  "name": "zachariahredfield",
+  "version": "1.0.0",
+  "description": "Hello! I'm Zac, a passionate game developer and software engineer currently expanding my skills in full-stack web development. I have a bachelor's degree in Game Development and I'm looking forward to showcasing my projects.",
+  "main": "contact-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
