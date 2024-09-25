@@ -23,6 +23,7 @@ toggleCheckbox.addEventListener('change', () => {
     localStorage.setItem('dark-mode', isDarkMode); // Save preference to localStorage
 });
 
+// Nav bar scroll adjustment
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault(); // Prevent default anchor click behavior
@@ -38,14 +39,19 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+// Contact form submission approve or deny W/ validation of information
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault(); // Prevent the form from submitting normally
 
     // Simple validation
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
     const formMessage = document.getElementById("form-message");
+
+    // Clear previous messages
+    formMessage.textContent = "";
 
     if (!name || !email || !message) {
         formMessage.textContent = "All fields are required.";
@@ -59,11 +65,40 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         return;
     }
 
-    formMessage.textContent = "Your message has been sent successfully!";
-    formMessage.style.color = "green";
+    const data = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    try {
+        const response = await fetch('/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            formMessage.textContent = "Your message has been sent successfully!";
+            formMessage.style.color = "green";
+            alert('Form submitted successfully!');
+        } else {
+            formMessage.textContent = "There was an error submitting the form.";
+            formMessage.style.color = "red";
+            alert('There was an error submitting the form.');
+        }
+    } catch (error) {
+        formMessage.textContent = "There was a problem connecting to the server.";
+        formMessage.style.color = "red";
+        console.error('Error:', error);
+    }
 
     // Reset the form after submission
-    document.getElementById("contactForm").reset();
+    contactForm.reset();
 });
 
 // Function to validate email
