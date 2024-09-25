@@ -52,7 +52,7 @@
         font-size: 0.8em; /* Smaller footer text */
     }
 
-    nav {
+    nav.sticky-nav {
         position: static;
         box-shadow: none;
     }
