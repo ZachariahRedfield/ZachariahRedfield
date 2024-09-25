@@ -4,7 +4,8 @@ body {
     padding: 20px;
     /* Add padding to the left and right */
     line-height: 1.6;
-
+    overflow-x: hidden;
+    
     /* Use the image as a background */
     background:
         linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
@@ -434,6 +435,7 @@ section {
 /* Add Padding and Centering */
 .container {
     overflow: visible;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     /* Centers content */
