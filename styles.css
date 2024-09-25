@@ -124,7 +124,7 @@ body.dark-mode #theme-label:hover {
 }
 
 body, header, footer, .project-card, nav, nav a, #theme-label, a.button-link,
-h1, h2, h3, h4, button {
+h1, h2, h3, h4, button, p,  {
     transition: background-color 1.2s ease, color 1.2s ease;
 }
 
