@@ -56,9 +56,6 @@
         position: static;
         box-shadow: none;
     }
-    .sticky-nav {
-        position: static;
-    }
 
     .nav-container {
         flex-direction: column;

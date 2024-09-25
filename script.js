@@ -39,6 +39,21 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+//Nav bar sticky toggle
+const stickyNav = document.querySelector('.sticky-nav');
+
+function updateStickyNav() {
+    if (window.innerWidth <= 600) {
+        stickyNav.style.position = 'static'; // Remove sticky behavior
+    } else {
+        stickyNav.style.position = 'sticky'; // Reapply sticky behavior
+    }
+}
+
+// Call on load and on resize
+window.addEventListener('load', updateStickyNav);
+window.addEventListener('resize', updateStickyNav);
+
 // Contact form submission with validation of information
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener("submit", async function (e) {
