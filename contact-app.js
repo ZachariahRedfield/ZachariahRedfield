@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(helmet()); //Security 
 
 //MongoDB connection 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log('MongoDB connected!'))
     .catch(err => console.log(err));
 
