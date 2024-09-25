@@ -1,3 +1,4 @@
+//script.js
 
 //Dark Mode Toggle Box Functionality
 const toggleCheckbox = document.getElementById('theme-toggle');
