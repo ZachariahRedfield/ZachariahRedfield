@@ -1,10 +1,103 @@
+
+@media only screen and (max-width: 343px) {
+    body {
+        padding: 10px;
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    header {
+        padding: 10px;
+        font-size: 18px; /* Reduce header font size for smaller screens */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between links */
+        margin-bottom: 10px; /* Add space between links */
+    }
+
+    nav a {
+        padding: 10px 20px; /* Increase padding for easier touch */
+        font-size: 16px; /* Make text more readable */
+    }
+
+    .project-card {
+        padding: 20px;
+        margin: 20px 0;
+        font-size: 18px; /* Slightly smaller text */
+    }
+
+    .form-container {
+        padding: 20px;
+        max-width: 100%; /* Make sure the form takes up the full width */
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.1em; /* Adjust button size */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em; /* Smaller footer text */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2em; /* Reduce heading size */
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .half-width {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
     /* Add padding to the left and right */
     line-height: 1.6;
-    overflow-x: hidden;
 
     /* Use the image as a background */
     background:
@@ -37,54 +130,112 @@ li {
     color: #333;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-        width: 100%;
-        margin: 5px 0;
-        /* Adjust padding on smaller screens */
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
-        /* Add space between each menu item */
-    }
-
-    .navbar {
-        flex-wrap: wrap; /* Enable wrapping for mobile */
-    }
-
-    .navbar button {
-        flex: 1 1 50%; /* Ensure two buttons per row */
-        padding: 15px;
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        border-right: 1px solid #555;
-    }
-
-    /* Remove the right border for the last button in each row */
-    .navbar button:nth-child(2n) {
-        border-right: none;
-    }
-
-    h1, h2 {
-        font-size: 1.5rem; /* Adjust heading size */
-    }
-
-    p {
-        font-size: 1rem; /* Adjust paragraph text */
-    }
-
-    button {
-        font-size: 0.9rem; /* Adjust button text size */
-    }
+/*Dark Mode Color Scheme*/
+body.dark-mode {
+    background:
+        linear-gradient(rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.8)),
+        url('Images/Black-Texture.jpg');
+    /* Replace with your image path */
+    background-color: #333;
+    color: #f4f4f9;
 }
 
+body.dark-mode header,
+body.dark-mode footer {
+    background: #fff;
+    color: #333;
+}
+
+body.dark-mode h1 {
+    color: #333
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode li {
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #5ea5f1
+}
+
+body.dark-mode nav {
+    background-color: #fff;
+    /* Make sure it has a background color */
+    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
+}
+
+body.dark-mode nav a {
+    background-color: #e4dcdc;
+    color: #414549;
+    border: 1px solid #414549;
+}
+
+body.dark-mode nav a:hover {
+    background-color: #a59797;
+}
+
+body.dark-mode a.button-link {
+    background-color: #e4dcdc;
+    color: #007bfff6;
+    border: 1px solid #414549;
+}
+
+body.dark-mode a.button-link:hover {
+    color: #333
+}
+
+body.dark-mode .project-card {
+    background: #333;
+    border: 1px solid #2b2c2e;
+    border-radius: 10px;
+    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
+}
+
+body.dark-mode .form-container {
+    background-color: #fff;
+    /* Apply background to just the form container */
+    color: #333
+}
+
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #a59797;
+}
+
+body.dark-mode #theme-label {
+    background-color: #414549;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+}
+
+body.dark-mode #theme-label:hover {
+    background-color: #98a2ad;
+    /* Darker background on hover */
+}
+
+body,
+header,
+footer,
+.project-card,
+nav,
+nav a,
+#theme-label,
+a.button-link,
+h1,
+h2,
+h3,
+h4,
+button,
+p {
+    transition: background-color 1.2s ease, color 1.2s ease;
+}
 
 /* Navigation Styles */
 nav {
@@ -381,111 +532,4 @@ section {
     margin: 0 auto;
     /* Centers content */
     padding: 20px;
-}
-
-/*Dark Mode Color Scheme*/
-body.dark-mode {
-    background:
-        linear-gradient(rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.8)),
-        url('Images/Black-Texture.jpg');
-    /* Replace with your image path */
-    background-color: #333;
-    color: #f4f4f9;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background: #fff;
-    color: #333;
-}
-
-body.dark-mode h1 {
-    color: #333
-}
-
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode li {
-    color: #fff;
-}
-
-body.dark-mode a {
-    color: #5ea5f1
-}
-
-body.dark-mode nav {
-    background-color: #fff;
-    /* Make sure it has a background color */
-    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
-}
-
-body.dark-mode nav a {
-    background-color: #e4dcdc;
-    color: #414549;
-    border: 1px solid #414549;
-}
-
-body.dark-mode nav a:hover {
-    background-color: #a59797;
-}
-
-body.dark-mode a.button-link {
-    background-color: #e4dcdc;
-    color: #007bfff6;
-    border: 1px solid #414549;
-}
-
-body.dark-mode a.button-link:hover {
-    color: #333
-}
-
-body.dark-mode .project-card {
-    background: #333;
-    border: 1px solid #2b2c2e;
-    border-radius: 10px;
-    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
-}
-
-body.dark-mode .form-container {
-    background-color: #fff;
-    /* Apply background to just the form container */
-    color: #333
-}
-
-body.dark-mode button {
-    background-color: #333;
-    color: #fff;
-}
-
-body.dark-mode button:hover {
-    background-color: #a59797;
-}
-
-body.dark-mode #theme-label {
-    background-color: #414549;
-    /* Button background color */
-    color: #fff;
-    /* Button text color */
-}
-
-body.dark-mode #theme-label:hover {
-    background-color: #98a2ad;
-    /* Darker background on hover */
-}
-
-body,
-header,
-footer,
-.project-card,
-nav,
-nav a,
-#theme-label,
-a.button-link,
-h1,
-h2,
-h3,
-h4,
-button,
-p {
-    transition: background-color 1.2s ease, color 1.2s ease;
 }
