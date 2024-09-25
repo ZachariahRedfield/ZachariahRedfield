@@ -57,16 +57,19 @@ li {
     }
 
     .navbar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 5px; /* Reduce padding */
+        flex-wrap: wrap; /* Enable wrapping for mobile */
     }
-    
+
     .navbar button {
-        flex: 1 1 auto;
-        margin: 5px; /* Reduce margin for better fit */
-        padding: 10px 15px; /* Adjust padding for smaller buttons */
+        flex: 1 1 50%; /* Ensure two buttons per row */
+        padding: 15px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        border-right: 1px solid #555;
+    }
+
+    /* Remove the right border for the last button in each row */
+    .navbar button:nth-child(2n) {
+        border-right: none;
     }
 
     h1, h2 {
