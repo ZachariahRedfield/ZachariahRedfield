@@ -1,6 +1,8 @@
 
 @media only screen and (max-width: 600px) {
     body {
+        max-width: 100%;
+        overflow-x: hidden;
         padding: 10px;
         font-size: 16px; /* Adjust font size for readability */
     }
@@ -50,6 +52,11 @@
         font-size: 0.8em; /* Smaller footer text */
     }
 
+    nav {
+        position: static;
+        box-shadow: none;
+    }
+    
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -75,9 +82,10 @@
     }
 
     .project-card {
+        margin: 10px 0;
         width: 100%;
-        padding: 15px;
-        margin-bottom: 15px;
+        /* Ensure the card takes up the full width of the screen */
+        box-sizing: border-box;
     }
 
     .half-width {
@@ -93,6 +101,9 @@
 
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
+
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
