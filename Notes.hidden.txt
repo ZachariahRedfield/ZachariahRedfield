@@ -1,0 +1,2 @@
+Using Render website for server side operations
+Using MongoDB Atlas for storing contact information
