@@ -73,7 +73,7 @@ contactForm.addEventListener("submit", async function (e) {
     };
 
     try {
-        const response = await fetch('/submit-form', {
+        const response = await fetch('https://contact-app-ynnx.onrender.com/submit-form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
