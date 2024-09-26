@@ -42,7 +42,7 @@ This portfolio includes a selection of my projects, both in game development and
 
 ### Backend Development
 - **Languages**: C#, Java, Python, SQL
-- **Frameworks**: Node.js packages: Express, CORS, Body-Parser, Mongoose, Helmet (for security), Spring Boot, Express.js
+- **Frameworks**: Node.js (Express, CORS, Body-Parser, Mongoose, Helmet), Spring Boot, Express.js
 - **Databases**: MongoDB
 
 ### Game Development
