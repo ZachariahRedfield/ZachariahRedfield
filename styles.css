@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 810px) {
     body {
         max-width: 100%;
         overflow-x: hidden;
@@ -98,7 +98,6 @@
         padding: 15px;
     }
 }
-
 
 body {
     
