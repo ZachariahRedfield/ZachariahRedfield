@@ -542,3 +542,26 @@ section {
     /* Centers content */
     padding: 20px;
 }
+
+/* Back to Top Button Styles */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Make sure it appears on top */
+    background-color: #333; /* Button background color */
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+    opacity: 1; /* Increase opacity when hovered */
+}
