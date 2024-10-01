@@ -1,7 +1,7 @@
 # Zachariah Redfield's Portfolio
 
 ## About Me
-Hello! I'm Zac, a passionate game developer and software engineer currently expanding my skills in full-stack web development. I have a bachelor's degree in Game Development and I'm looking forward to showcasing my projects.
+Hello! I'm Zac, a Full-Stack Developer with a strong foundation in game development, software engineering, and data analysis. Proficient in C++, Java, Python, and full-stack web technologies such as Node.js and MongoDB. Demonstrated success in delivering impactful software solutions, optimizing processes, and contributing to disaster response efforts through data-driven decision-making. Eager to leverage problem-solving skills, technical expertise, and practical experience to contribute to innovative software projects..
 
 ## Portfolio Overview
 This portfolio includes a selection of my projects, both in game development and web applications. Here’s what you can find:
