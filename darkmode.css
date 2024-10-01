@@ -22,14 +22,15 @@ body.dark-mode {
 
 body.dark-mode .project-card,
 body.dark-mode button {
-    background: var(--bg1-color);
+    background-color: var(--bg1-color);
 }
 
 body.dark-mode header,
 body.dark-mode footer,
 body.dark-mode .form-container,
-body.dark-mode nav {
-    background: var(--bg2-color);
+body.dark-mode nav,
+body.dark-mode #theme-label:hover {
+    background-color: var(--bg2-color);
 }
 
 body.dark-mode h2,
@@ -62,7 +63,6 @@ body.dark-mode #theme-label {
     background-color: var(--offsetblck-color);
 }
 
-body.dark-mode #theme-label:hover,
 body.dark-mode button:hover,
 body.dark-mode nav a:hover {
     background-color: var(--buttonhover-color);
