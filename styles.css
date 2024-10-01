@@ -314,5 +314,5 @@ p,
 a,
 li,
 #backToTop {
-    transition: background-color 1.2s ease, color .9s ease;
+    transition: background-color .5s ease, color .5s ease;
 }
