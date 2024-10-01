@@ -279,9 +279,8 @@ section {
     display: none; /* Hidden by default */
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    left: 20px;
-    z-index: 99; /* Make sure it appears on top */
+    right: 20px; /* Remove the left: 20px; */
+    z-index: 99; /* Ensure it appears on top */
     border: none;
     outline: none;
     padding: 10px 15px;
