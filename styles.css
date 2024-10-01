@@ -149,7 +149,7 @@ a.button-link:hover {
 .project-card:hover {
     transform: translateY(-8px);
     /* Add more elevation on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
 /* Contact Section */
