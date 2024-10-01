@@ -80,27 +80,6 @@ body.dark-mode a.button-link {
 
 body.dark-mode nav,
 body.dark-mode .project-card {
-    border-radius: 10px;
     /* Make sure it has a background color */
     box-shadow: 0 8px 14px var(--boxshadow-color);
-}
-
-body,
-header,
-footer,
-.form-container,
-.project-card,
-nav,
-nav a,
-#theme-label,
-a.button-link,
-h1,
-h2,
-h3,
-h4,
-button,
-p,
-a,
-li {
-    transition: background-color 1.2s ease, color .9s ease;
 }

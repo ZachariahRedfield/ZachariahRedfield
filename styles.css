@@ -295,3 +295,24 @@ section {
 #backToTop:hover {
     opacity: 1; /* Increase opacity when hovered */
 }
+
+body,
+header,
+footer,
+.form-container,
+.project-card,
+nav,
+nav a,
+#theme-label,
+a.button-link,
+h1,
+h2,
+h3,
+h4,
+button,
+p,
+a,
+li,
+#backToTop {
+    transition: background-color 1.2s ease, color .9s ease;
+}
