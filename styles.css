@@ -278,6 +278,7 @@ section {
 #backToTop {
     display: none; /* Hidden by default */
     position: fixed;
+    bottom: 20px;
     z-index: 99; /* Make sure it appears on top */
     border: none;
     outline: none;
