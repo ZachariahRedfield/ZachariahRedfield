@@ -284,7 +284,7 @@ section {
     z-index: 99; /* Make sure it appears on top */
     border: none;
     outline: none;
-    padding: 10px 15px;
+    padding: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
