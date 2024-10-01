@@ -1,106 +1,5 @@
-
-@media only screen and (max-width: 810px) {
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-        padding: 10px;
-        font-size: 16px; /* Adjust font size for readability */
-    }
-
-    header {
-        padding: 10px;
-        font-size: 18px; /* Reduce header font size for smaller screens */
-    }
-
-    .nav-container {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
-    }
-
-    nav ul li {
-        margin-right: 0; /* Remove margin between links */
-        margin-bottom: 10px; /* Add space between links */
-    }
-
-    nav a {
-        padding: 10px 20px; /* Increase padding for easier touch */
-        font-size: 16px; /* Make text more readable */
-    }
-
-    .project-card {
-        padding: 20px;
-        margin: 20px 0;
-        font-size: 18px; /* Slightly smaller text */
-    }
-
-    .form-container {
-        padding: 20px;
-        max-width: 100%; /* Make sure the form takes up the full width */
-    }
-
-    button {
-        padding: 12px;
-        font-size: 1.1em; /* Adjust button size */
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 0.8em; /* Smaller footer text */
-    }
-
-    nav.sticky-nav {
-        position: static;
-        box-shadow: none;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    h1, h2, h3, h4 {
-        font-size: 1.2em; /* Reduce heading size */
-    }
-
-    button {
-        padding: 12px 20px;
-        font-size: 1em;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-        padding: 10px;
-        font-size: 1em;
-    }
-
-    .project-card {
-        margin: 10px 0;
-        width: 100%;
-        /* Ensure the card takes up the full width of the screen */
-        box-sizing: border-box;
-    }
-
-    .half-width {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    button {
-        width: 100%;
-        padding: 15px;
-    }
-}
-
+/* Main Style Sheet */
 body {
-    
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
@@ -113,136 +12,11 @@ body {
         url('Images/White-Texture.jpg');
     /* Replace with your image path */
     background-size: cover;
-    background-color: #f4f4f9;
-    color: #333;
 }
 
 header {
-    background: #333;
-    color: #ffffff;
     padding: 10px 20px;
     text-align: center;
-}
-
-/* Custom Color Theme */
-h1 {
-    color: #fff;
-}
-
-h2,
-h3 {
-    color: #333;
-}
-
-li {
-    color: #333;
-}
-
-/*Dark Mode Color Scheme*/
-body.dark-mode {
-    background:
-        linear-gradient(rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.8)),
-        url('Images/Black-Texture.jpg');
-    /* Replace with your image path */
-    background-color: #333;
-    color: #f4f4f9;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-    background: #fff;
-    color: #333;
-}
-
-body.dark-mode h1 {
-    color: #333
-}
-
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode li {
-    color: #fff;
-}
-
-body.dark-mode a {
-    color: #5ea5f1
-}
-
-body.dark-mode nav {
-    background-color: #fff;
-    /* Make sure it has a background color */
-    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
-}
-
-body.dark-mode nav a {
-    background-color: #e4dcdc;
-    color: #414549;
-    border: 1px solid #414549;
-}
-
-body.dark-mode nav a:hover {
-    background-color: #a59797;
-}
-
-body.dark-mode a.button-link {
-    background-color: #e4dcdc;
-    color: #007bfff6;
-    border: 1px solid #414549;
-}
-
-body.dark-mode a.button-link:hover {
-    color: #333
-}
-
-body.dark-mode .project-card {
-    background: #333;
-    border: 1px solid #2b2c2e;
-    border-radius: 10px;
-    box-shadow: 0 8px 14px rgba(255, 255, 255, .5);
-}
-
-body.dark-mode .form-container {
-    background-color: #fff;
-    /* Apply background to just the form container */
-    color: #333
-}
-
-body.dark-mode button {
-    background-color: #333;
-    color: #fff;
-}
-
-body.dark-mode button:hover {
-    background-color: #a59797;
-}
-
-body.dark-mode #theme-label {
-    background-color: #414549;
-    /* Button background color */
-    color: #fff;
-    /* Button text color */
-}
-
-body.dark-mode #theme-label:hover {
-    background-color: #98a2ad;
-    /* Darker background on hover */
-}
-
-body,
-header,
-footer,
-.project-card,
-nav,
-nav a,
-#theme-label,
-a.button-link,
-h1,
-h2,
-h3,
-h4,
-button,
-p {
-    transition: background-color 1.2s ease, color 1.2s ease;
 }
 
 /* Navigation Styles */
@@ -252,9 +26,6 @@ nav {
     margin-bottom: 20px;
     z-index: 1000;
     /* Keeps the nav on top of other elements */
-    background-color: #333;
-    /* Make sure it has a background color */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
     /* Adjust padding to ensure consistent height */
 }
@@ -298,17 +69,10 @@ nav ul li {
 nav a {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #414549;
-    color: #fff;
-    border: 1px solid #dfe3e9;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.5s ease;
     /* Smooth background transition */
-}
-
-nav a:hover {
-    background-color: #666a6d;
 }
 
 /*Dark Mode Toggle*/
@@ -321,9 +85,6 @@ nav a:hover {
     font-size: 20px;
     /* Adjust the size as needed */
     padding: 4px 8px;
-    background-color: #98a2ad;
-    /* Button background color */
-    color: #333;
     /* Button text color */
     border-radius: 5px;
     /* Rounded corners */
@@ -331,19 +92,19 @@ nav a:hover {
     /* Smooth transition */
 }
 
-#theme-label:hover {
-    background-color: #414549;
-    /* Darker background on hover */
+/*Regular links*/
+a {
+    text-decoration: none;
+}
+
+a:not(.button-link):hover {
+    text-decoration: underline;
 }
 
 /* Button-Like Links for External Profiles */
 a.button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #414549;
-    /* Dark blue color when not hovering */
-    color: #5ea5f1;
-    border: 1px solid #e1e4e8;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.5s ease;
@@ -352,7 +113,6 @@ a.button-link {
 
 /* Rainbow Hover Effect */
 a.button-link:hover {
-    color: #333;
     background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff, #7f00ff, #ff00ff, #ff007f, #ff7f00, #ffff00, #7fff00, #00ff00, #00ff7f, #00ffff, #007fff, #0000ff);
     background-size: 300%;
     /* Make the gradient larger to allow smooth animation */
@@ -373,22 +133,9 @@ a.button-link:hover {
     }
 }
 
-/*Regular links*/
-a {
-    color: #007bfff6;
-    text-decoration: none;
-}
-
-a:not(.button-link):hover {
-    text-decoration: underline;
-}
-
 /* Project Card Styles */
 .project-card {
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     /* A deeper shadow for a sharper look */
     margin: 30px 0;
     padding: 25px;
@@ -402,8 +149,6 @@ a:not(.button-link):hover {
 .project-card:hover {
     transform: translateY(-8px);
     /* Add more elevation on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    /* Sharper hover shadow */
 }
 
 /* Contact Section */
@@ -425,13 +170,8 @@ a:not(.button-link):hover {
 }
 
 .form-container {
-    background-color: #333;
-    /* Apply background to just the form container */
-    color: #fff;
     padding: 40px;
     /* Add padding around the form */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Add shadow for a subtle 3D effect */
     border-radius: 10px;
     /* Rounded corners for the form */
     max-width: 800px;
@@ -479,7 +219,6 @@ textarea {
     /* Add padding to make inputs bigger and more balanced */
     font-size: 1.1em;
     border-radius: 5px;
-    border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 5px;
     max-width: 100%;
@@ -498,18 +237,12 @@ textarea {
 button {
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: #fff;
-    color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
     /* Make the button take the full width */
-}
-
-button:hover {
-    background-color: #414549;
 }
 
 /* Error/success message */
@@ -521,8 +254,6 @@ button:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #ffffff;
     padding: 20px 0;
     text-align: center;
     font-size: 0.9em;
@@ -548,9 +279,8 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    left: 20px;
     z-index: 99; /* Make sure it appears on top */
-    background-color: #333; /* Button background color */
-    color: white;
     border: none;
     outline: none;
     padding: 10px 15px;

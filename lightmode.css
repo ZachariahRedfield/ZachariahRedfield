@@ -1,0 +1,72 @@
+/* Light Mode Color Scheme */
+header,
+nav,
+#backToTop,
+.form-container,
+footer {
+    background: var(--bg2-color);
+}
+
+body,
+.project-card,
+button {
+    background-color: var(--bg1-color);
+}
+
+header, 
+h1,
+nav a,
+#backToTop,
+.form-container,
+footer {
+    color: var(--text2-color);
+}
+
+body,
+h2,
+h3,
+li,
+#theme-label,
+a.button-link:hover,
+button {
+    color: var(--text1-color);
+}
+
+nav a,
+#theme-label:hover,
+a.button-link,
+button:hover {
+    background-color: var(--offsetblck-color);
+}
+
+#theme-label {
+    background-color: var(--button-color);
+}
+
+nav a:hover {
+    background-color: var(--buttonhover-color);
+}
+
+a.button-link,
+nav a,
+.project-card,
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid var(--border-color);
+}
+
+a.button-link,
+a {
+    color: var(--link-color);
+}
+
+nav,
+.project-card,
+.form-container {
+    box-shadow: 0 6px 12px var(--boxshadow-color);
+}
+
+.project-card:hover {
+    box-shadow: 0 12px 14px var(--boxshadow-color);
+}

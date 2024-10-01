@@ -1,0 +1,106 @@
+/* Dark mode Color Scheme Styles */
+body.dark-mode {
+    background:
+        linear-gradient(rgba(31, 29, 29, 0.4), rgba(31, 29, 29, 0.4)),
+        url('Images/Black-Texture.jpg');
+
+    --bg1-color: #333;
+    --text1-color: #fff;
+
+    --bg2-color: #fff;
+    --text2-color: #333;
+
+    --offsetblck-color: #414549;
+
+    --link-color: #5ea5f1;
+
+    --button-color: #ebe1e1;
+    --buttonhover-color: #98a0ade7;
+
+    --boxshadow-color: rgba(255, 255, 255, .5);
+}
+
+body.dark-mode .project-card,
+body.dark-mode button {
+    background: var(--bg1-color);
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .form-container,
+body.dark-mode nav {
+    background: var(--bg2-color);
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode li,
+body.dark-mode button,
+body.dark-mode #theme-label {
+    color: var(--text1-color);
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .form-container,
+body.dark-mode h1,
+body.dark-mode a.button-link:hover {
+    color: var(--text2-color)
+}
+
+body.dark-mode nav a {
+    color: var(--offsetblck-color);
+}
+
+body.dark-mode nav a,
+body.dark-mode a.button-link,
+body.dark-mode .project-card {
+    border: 1px solid var(--offsetblck-color);
+}
+
+body.dark-mode #theme-label {
+    background-color: var(--offsetblck-color);
+}
+
+body.dark-mode #theme-label:hover,
+body.dark-mode button:hover,
+body.dark-mode nav a:hover {
+    background-color: var(--buttonhover-color);
+}
+
+body.dark-mode a,
+body.dark-mode a.button-link {
+    color: var(--link-color);
+}
+
+body.dark-mode nav a,
+body.dark-mode a.button-link {
+    background-color: var(--button-color);
+}
+
+body.dark-mode nav,
+body.dark-mode .project-card {
+    border-radius: 10px;
+    /* Make sure it has a background color */
+    box-shadow: 0 8px 14px var(--boxshadow-color);
+}
+
+body,
+header,
+footer,
+.form-container,
+.project-card,
+nav,
+nav a,
+#theme-label,
+a.button-link,
+h1,
+h2,
+h3,
+h4,
+button,
+p,
+a,
+li {
+    transition: background-color 1.2s ease, color .9s ease;
+}

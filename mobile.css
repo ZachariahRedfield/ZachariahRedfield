@@ -1,0 +1,100 @@
+/* Media and Mobie view Style Sheet */
+@media only screen and (max-width: 810px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 10px;
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    header {
+        padding: 10px;
+        font-size: 18px; /* Reduce header font size for smaller screens */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin-right: 0; /* Remove margin between links */
+        margin-bottom: 10px; /* Add space between links */
+    }
+
+    nav a {
+        padding: 10px 20px; /* Increase padding for easier touch */
+        font-size: 16px; /* Make text more readable */
+    }
+
+    .project-card {
+        padding: 20px;
+        margin: 20px 0;
+        font-size: 18px; /* Slightly smaller text */
+    }
+
+    .form-container {
+        padding: 20px;
+        max-width: 100%; /* Make sure the form takes up the full width */
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1.1em; /* Adjust button size */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.8em; /* Smaller footer text */
+    }
+
+    nav.sticky-nav {
+        position: static;
+        box-shadow: none;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.2em; /* Reduce heading size */
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .project-card {
+        margin: 10px 0;
+        width: 100%;
+        /* Ensure the card takes up the full width of the screen */
+        box-sizing: border-box;
+    }
+
+    .half-width {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
