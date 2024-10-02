@@ -45,6 +45,7 @@ button:hover {
 
 nav a:hover {
     background-color: var(--buttonhover-color);
+    color: var(--text1-color);
 }
 
 a.button-link,

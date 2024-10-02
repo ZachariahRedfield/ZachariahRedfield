@@ -66,6 +66,7 @@ body.dark-mode #theme-label {
 body.dark-mode button:hover,
 body.dark-mode nav a:hover {
     background-color: var(--buttonhover-color);
+    color: var(--text1-color);
 }
 
 body.dark-mode a,
